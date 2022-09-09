@@ -3,5 +3,6 @@
     <pages>
         <page name='Remove Duplicates from Sorted Array'/>
         <page name=' Best Time to Buy and Sell Stock II  '/>
+        <page name=' Rotate Array'/>
     </pages>
 </playground>
