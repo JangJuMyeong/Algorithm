@@ -28,7 +28,7 @@ func singleNumber(_ nums: [Int]) -> Int {
     let tempArray = nums
     
     for num in nums {
-        if tempArray.filter({ $0 == num }).count == 1 {
+        if tempArray.filter{ $0 == num }.count == 1 {
             return num
         }
     }
@@ -37,6 +37,6 @@ func singleNumber(_ nums: [Int]) -> Int {
 
 }
 
-let test = [4,1,2,1,2]
+let test = [2,2,1,3,4,5,1,4,5]
 
 singleNumber(test)
