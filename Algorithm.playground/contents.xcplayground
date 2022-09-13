@@ -6,5 +6,6 @@
         <page name=' Rotate Array'/>
         <page name='Contains Duplicate'/>
         <page name='Single Number'/>
+        <page name='Intersection of Two Arrays II'/>
     </pages>
 </playground>
