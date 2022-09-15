@@ -7,5 +7,7 @@
         <page name='Contains Duplicate'/>
         <page name='Single Number'/>
         <page name='Intersection of Two Arrays II'/>
+        <page name='plusOne'/>
+        <page name=' Move Zeroes'/>
     </pages>
 </playground>
