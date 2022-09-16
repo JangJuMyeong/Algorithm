@@ -19,7 +19,7 @@ func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         if index != nil && index != i {
             return [i,index!]
         }
-        
+        	
     }
     
     return answer
