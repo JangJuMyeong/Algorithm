@@ -7,8 +7,8 @@ var greeting = "Hello, playground"
 //: [Next](@next)
 
 func reverse(_ x: Int) -> Int {
-    var stringToInt = String(x).reversed()
-    var value = String(stringToInt)
+    var intToString = String(x).reversed()
+    var value = String(intToString)
     
     //음수의 경우 뒤에 -가 붙는다
     if x < 0 {
@@ -17,7 +17,7 @@ func reverse(_ x: Int) -> Int {
     }
     //Int32 체크
     if let answer = Int32(value) {
-        return answer
+        return Int(answer)
     }
     return 0
 }
