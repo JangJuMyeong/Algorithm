@@ -15,5 +15,6 @@
         <page name='Rotate Image'/>
         <page name='Reverse Integer'/>
         <page name='First Unique Character in a String  '/>
+        <page name='Valid Anagram'/>
     </pages>
 </playground>
