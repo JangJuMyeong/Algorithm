@@ -8,56 +8,46 @@ var greeting = "Hello, playground"
 
 
 
-func longestCommonPrefix2(_ strs: [String]) -> String {
-    
-    var answer = ""
-    
-    if let shortest = strs.min() {
+func longestCommonPrefix(_ strs: [String]) -> String {
 
-        for i in 1...shortest.count {
-            var longetPrefix = ""
-            
-            let prefix = shortest.prefix(i)
-            
-            print(prefix)
-            
+    var answer = ""
+
+    if var shortest = strs.min() {
+        while !shortest.isEmpty {
+            var isPrefix = true
             for str in strs {
-                if str.hasPrefix(prefix) {
-                    longetPrefix = prefix
-                } else {
-                    longetPrefix = ""
+                if !str.hasPrefix(shortest) {
+                    isPrefix = false
                 }
             }
-
-            if !longetPrefix.isEmpty {
-                answer = longetPrefix
+            
+            if !isPrefix {
+                shortest.removeLast()
+            } else {
+                return shortest
             }
         }
     }
-    
-    
+
+
     return answer
 }
 
-func longestCommonPrefix(_ strs: [String]) -> String {
-        guard let shortestString = strs.min() else {
-            return ""
+
+// 모범 답안
+func longestCommonPrefix2(_ strs: [String]) -> String {
+    guard var prefix = strs.min() else {
+        return ""
+        
+    }
+    while prefix.isEmpty == false {
+        if strs.allSatisfy({ $0.hasPrefix(prefix) }) {
+            break
         }
-        var longest = ""
-        for i in 0...shortestString.count {
-            let prefix = shortestString.prefix(i)
-            var flag = true
-    
-            for str in strs {
-                flag = flag && str.hasPrefix(prefix)
-            }
-            if flag {
-                longest = String(prefix)
-            } else {
-                return longest
-            }
+            prefix.removeLast()
         }
-        return longest
+        return prefix
     }
 
-longestCommonPrefix(["flower","flow","flight"])
+
+longestCommonPrefix2(["flower","flow","flight"])
