@@ -19,5 +19,6 @@
         <page name='Valid Palindrome'/>
         <page name='String to Integer (atoi)'/>
         <page name='Implement strStr()'/>
+        <page name='Longest Common Prefix'/>
     </pages>
 </playground>
