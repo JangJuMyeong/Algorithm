@@ -21,5 +21,7 @@
         <page name='Implement strStr()'/>
         <page name='Longest Common Prefix'/>
         <page name='Delete Node in a Linked List'/>
+        <page name='Remove Nth Node From End of List'/>
+        <page name='Kako 1'/>
     </pages>
 </playground>
