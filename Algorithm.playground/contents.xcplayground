@@ -23,5 +23,6 @@
         <page name='Delete Node in a Linked List'/>
         <page name='Remove Nth Node From End of List'/>
         <page name='Kako 1'/>
+        <page name='reverseLinkedList'/>
     </pages>
 </playground>
